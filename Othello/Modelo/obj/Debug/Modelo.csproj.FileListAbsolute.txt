@@ -1,0 +1,7 @@
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Modelo\bin\Debug\Modelo.dll
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Modelo\bin\Debug\Modelo.pdb
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Modelo\obj\Debug\Modelo.dll
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Modelo\obj\Debug\Modelo.pdb
