@@ -10,10 +10,13 @@
     border: 5px;
 }
 
-.bottom{
-    position: absolute;
-    bottom:0;
-}
 body {
     background-color:seagreen !important;
+}
+
+.formulario {
+    width: 45% !important;
+    margin-top: 5% !important;
+    padding-right: 5%;
+    padding-left: 5%;
 }

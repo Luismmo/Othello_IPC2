@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Othello - Iniciar sesión</title>
     <link href="resources/css/estilos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
@@ -33,13 +33,17 @@
             <div class="form-group">
                 <asp:Label ID="lblPassword" runat="server" Text="Contraseña" CssClass="control-label col-sm-2"></asp:Label>
                 <div class="col-sm-10">
-                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control"></asp:TextBox> 
+
+                    <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox> 
                 </div>
             </div>
 
             <div class="form-group">
                 <asp:Button ID="btnIniciar" runat="server" Text="Iniciar sesión" OnClick="Iniciar_Click" CssClass="form-control btn btn-primary"/>
-            </div>            
+                
+                <asp:LinkButton ID="lnkRegistro" runat="server" OnClick="lnkRegistro_Click" CausesValidation="false">¿No tienes cuenta? Registrate aqui</asp:LinkButton>
+            </div>
+            
                         
     </form>        
     </div>   

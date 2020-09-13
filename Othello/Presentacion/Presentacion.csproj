@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -69,6 +73,7 @@
   <ItemGroup>
     <Content Include="Inicio.aspx" />
     <Content Include="pages\inicio\sistema.aspx" />
+    <Content Include="registro.aspx" />
     <Content Include="resources\css\estilos.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -88,6 +93,13 @@
       <DependentUpon>sistema.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registro.aspx.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registro.aspx.designer.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="resources\master\plantilla.Master.cs">
       <DependentUpon>plantilla.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -60,3 +60,4 @@ C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Presentacion\bin\Microsoft.
 C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\almxo\Documents\GitHub\Othello_IPC2\Othello\Presentacion\bin\AjaxControlToolkit.dll

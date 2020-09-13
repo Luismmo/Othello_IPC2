@@ -31,5 +31,10 @@ namespace Presentacion
                 Response.Redirect("~/pages/inicio/sistema.aspx");
             }
         }
+
+        protected void lnkRegistro_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/registro.aspx");
+        }
     }
 }
