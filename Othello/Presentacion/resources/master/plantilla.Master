@@ -28,6 +28,7 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                             <li><a href="#">Link</a></li>
@@ -44,21 +45,21 @@
                                 </ul>
                             </li>
                         </ul>
+
                         <ul class="nav navbar-nav navbar-right">                            
 
-                            <li>
+                            <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <asp:Label ID="lblNombre" runat="server" Text=""></asp:Label>                                                                  
-                                <span class="caret"></span></a>
-                                </li>
-                                <li class="dropdown">
-                                <ul class="dropdown-menu">                                      
+                                    <asp:Label ID="lblNombre" runat="server" Text=""></asp:Label>
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
                                     <li>
                                         <asp:LinkButton ID="linkCerrrarSesion" runat="server" OnClick="linkCerrrarSesion_Click">Cerrar sesión</asp:LinkButton>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>                            
                         </ul>
+
                     </div>
                     <!-- /.navbar-collapse -->
                 </div>

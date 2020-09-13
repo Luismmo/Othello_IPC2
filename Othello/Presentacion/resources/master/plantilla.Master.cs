@@ -20,7 +20,7 @@ namespace Presentacion.resources.master
             }
             else
             {
-                Response.Redirect("~Inicio.aspx");
+                Response.Redirect("~/Inicio.aspx");
             }
                 
              
@@ -29,7 +29,7 @@ namespace Presentacion.resources.master
         protected void linkCerrrarSesion_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            Response.Redirect("~Inicio.aspx");
+            Response.Redirect("~/Inicio.aspx");
         }
     }
 }
