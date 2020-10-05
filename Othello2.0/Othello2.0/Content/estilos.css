@@ -1,0 +1,22 @@
+﻿h1, h3 {
+    text-align:center;
+}
+
+.contenedor{
+    width: 35% !important;
+    height: 80% !important;
+    margin-top:5%;
+    margin-left: 300px;
+    border: 5px;
+}
+
+body {
+    background-color:seagreen !important;
+}
+
+.formulario {
+    width: 45% !important;
+    margin-top: 5% !important;
+    padding-right: 5%;
+    padding-left: 5%;
+}

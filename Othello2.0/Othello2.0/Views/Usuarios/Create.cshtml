@@ -1,0 +1,124 @@
+﻿@model Othello2._0.Models.Usuario
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Othello - Registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        h3{
+            text-align:center;
+        }
+        .container {
+            width: 50% !important;
+            margin-top: 3%;
+        }
+        body {
+            background-color: seagreen !important;
+        }
+    </style>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal container well contenedor">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Regístrate</h3>
+                </div>
+            </div>
+            
+            <hr />
+            <form>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Nombre</label>
+                    @*@Html.LabelFor(model => model.nombre, htmlAttributes: new { @class = "col-sm-3 col-form-label" })*@
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Apellido</label>
+                    @*@Html.LabelFor(model => model.apellido, htmlAttributes: new { @class = "col-sm-3 col-form-label" })*@
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.apellido, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.apellido, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Nombre de usuario</label>
+                    @*@Html.LabelFor(model => model.nombreUsuario, htmlAttributes: new { @class = "col-sm-3 col-form-label" })*@
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.nombreUsuario, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.nombreUsuario, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Contraseña</label>
+                    @*@Html.LabelFor(model => model.contrasenia, htmlAttributes: new { @class = "col-sm-3 col-form-label" })*@
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.contrasenia, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.contrasenia, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Fecha de nacimiento</label>
+                    @*@Html.LabelFor(model => model.fechaNacimiento, htmlAttributes: new { @class = "col-sm-3 col-form-label" })*@
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.fechaNacimiento, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.fechaNacimiento, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">País</label>
+                    @*@Html.LabelFor(model => model.pais, htmlAttributes: new { @class = "col-sm-3 col-form-label" })*@
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.pais, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.pais, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-3 col-form-label">Correo electrónico</label>
+                    @*@Html.LabelFor(model => model.correoElectronico, htmlAttributes: new { @class = "col-sm-3 col-form-label" })*@
+                    <div class="col-sm-9">
+                        @Html.EditorFor(model => model.correoElectronico, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.correoElectronico, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <input type="submit" value="Completar registro" class="form-control btn btn-primary" />
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        @Html.ActionLink("¿Ya tienes una cuenta? Inicia sesion.", "Login", "Login")
+                    </div>
+                </div>
+            </form>
+        </div>
+    }
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

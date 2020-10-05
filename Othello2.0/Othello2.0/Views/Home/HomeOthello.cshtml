@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "HomeOthello";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Othello - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="~/Content/HomeStyle.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">                
+                <ul class="nav navbar-nav navbar-right">
+                    <li>                       
+                        @Html.ActionLink("Inicia sesión", "Login", "Login")
+                    </li>                   
+                </ul>
+            </div>
+        </nav>
+    </div> 
+
+    <div>        
+        <center>
+            <div class="Area">
+                <h1>Othello Reversi</h1>
+                <img src="~/Images/Reversi.jpg" class="img-fluid" alt="Responsive image">                
+                <br />
+                <p>
+                    El reversi, othello o yang es un juego entre dos personas, que comparten 64 fichas iguales, de caras distintas, que se van colocando por turnos en un tablero dividido en 64 escaques. Las caras de las fichas se distinguen por su color y cada jugador tiene asignado uno de esos colores, ganando quien tenga más fichas sobre el tablero al finalizar la partida. Se clasifica como juego de tablero, abstracto y territorial; al igual que el go y las amazonas.
+                    La movilidad media de un jugador a lo largo de la partida es de 8 movimientos. Como en total se pueden hacer 60 movimientos, el número máximo de posibles partidas es de aproximadamente 1054. Por otra parte, el número máximo de posiciones posibles se calcula aproximadamente en 1030.
+                </p>
+                <p>
+                    Sus orígenes se sitúan en Inglaterra, en el siglo XIX, en donde los londinenses Lewis Waterman y John W. Mollett comercializaron en 1880, cada uno, juegos con reglas parecidas.
+
+                    En 1971 el japonés Goro Hasegawa cambió dos reglas del juego y lo registró bajo el nombre de Othello ®, inspirado por la obra de Shakespeare del mismo nombre. ("Otelo" en español).
+
+                    Actualmente únicamente se juega con las reglas de Othello (en idioma castellano también se utiliza el nombre de otelo, y en Argentina bajo el nombre comercial de "Yang"), aunque se suela referirse a estas reglas bajo el nombre de reversi y no se emplean nunca las reglas originales del reversi, aunque se vayan a exponer más adelante.
+
+                    Desde 1977 se juega un Campeonato Mundial de Othello en el que pueden participar tres jugadores por país (o cuatro en el caso del país organizador si hay un número impar de jugadores); si el número de jugadores lo permite se emplea el sistema suizo. Para establecer el equipo ganador (desde 1987) se contabiliza el número de puntos de los tres jugadores del país.
+
+                    El otelo crea interés entre los programadores debido a la sencillez de sus reglas: solo un tipo de movimiento, un único tipo de fichas, etc. El primer torneo entre programas fue en 1979. En 1981 se celebró un torneo con jugadores humanos y programas que fue ganado por Hiroshi Inouie, el entonces campeón mundial, aunque perdió una partida contra el programa The Moor, siendo esta la primera vez que un programa ganaba a un campeón mundial en un juego de este tipo. Los programas han ido ganando en potencial, terminando por ser imbatibles, por ejemplo, el programa Logistello en 1997 derrotó claramente al campeón mundial Murakami por 6 victorias a 0
+                </p>
+            </div>
+        </center>         
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

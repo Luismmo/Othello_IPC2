@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Modelo;
@@ -15,7 +16,7 @@ namespace Presentacion
 
         }
 
-        protected void Iniciar_Click(object sender, EventArgs e)
+        protected ActionResult Iniciar_Click(object sender, EventArgs e)
         {
             string user = txtUser.Text;
             string password = txtPassword.Text;
@@ -27,8 +28,9 @@ namespace Presentacion
             }
             else
             {
-                Session["usuarioId"] = usuarioId;
-                Response.Redirect("~/pages/inicio/sistema.aspx");
+                 //Session["usuarioId"] = usuarioId;
+                //Response.Redirect("~/pages/inicio/sistema.aspx");
+                return 
             }
         }
 
