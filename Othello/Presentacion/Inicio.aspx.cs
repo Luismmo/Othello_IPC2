@@ -28,9 +28,8 @@ namespace Presentacion
             }
             else
             {
-                 //Session["usuarioId"] = usuarioId;
-                //Response.Redirect("~/pages/inicio/sistema.aspx");
-                return 
+                Session["usuarioId"] = usuarioId;
+                Response.Redirect("~/pages/inicio/sistema.aspx");                
             }
         }
 
